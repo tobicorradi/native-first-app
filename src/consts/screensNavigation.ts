@@ -5,17 +5,23 @@ interface ScreensNavigation {
   component: React.FC;
 }
 
+export enum ScreensNames {
+  Home = "Home",
+  Search = "Search",
+  Account = "Account",
+}
+
 export const screensNavigation: ScreensNavigation[] = [
   {
-    name: "Home",
+    name: ScreensNames.Home,
     component: Home,
   },
   {
-    name: "Search",
+    name: ScreensNames.Search,
     component: Search,
   },
   {
-    name: "Account",
+    name: ScreensNames.Account,
     component: Account,
   },
 ];
